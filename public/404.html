@@ -1,0 +1,6 @@
+<script>
+  // redirect to index.html with current path as hash
+  const path = location.pathname.replace(/\\/g, '/');
+  const newUrl = `/lavaggio-doorstep-spa/#${path}${location.search}${location.hash}`;
+  location.replace(newUrl);
+</script>
