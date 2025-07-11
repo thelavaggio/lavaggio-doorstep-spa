@@ -39,11 +39,11 @@ const BookingInProgress = () => {
               <div className="grid md:grid-cols-2 gap-4">
                 <Button variant="premium" size="lg" className="text-lg px-6 py-4">
                   <Phone className="mr-2" />
-                  Call Now: +91 98765 43210
+                  Call Now: +91 99486 99912
                 </Button>
                 <Button variant="outline" size="lg" className="text-lg px-6 py-4">
                   <Clock className="mr-2" />
-                  WhatsApp: +91 98765 43210
+                  WhatsApp: +91 99486 99912
                 </Button>
               </div>
             </div>
