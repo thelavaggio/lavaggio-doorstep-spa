@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Calendar, Facebook, Twitter, Instagram } from "lucide-react";
 
 export const Footer = () => {
@@ -70,10 +71,12 @@ export const Footer = () => {
               </div>
             </div>
             
-            <Button variant="hero" size="sm" className="mt-6 bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-              <Calendar className="mr-2 w-4 h-4" />
-              Book Service
-            </Button>
+            <Link to="/book-slot">
+              <Button variant="hero" size="sm" className="mt-6 bg-primary-foreground text-primary hover:bg-primary-foreground/90">
+                <Calendar className="mr-2 w-4 h-4" />
+                Book Service
+              </Button>
+            </Link>
           </div>
         </div>
         

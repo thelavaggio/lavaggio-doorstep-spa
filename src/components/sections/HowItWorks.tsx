@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { MapPin, Clock, CheckCircle, CreditCard } from "lucide-react";
 
 const steps = [
@@ -92,9 +93,11 @@ export const HowItWorks = () => {
         </div>
         
         <div className="text-center mt-12">
-          <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-            Start Your First Booking
-          </Button>
+          <Link to="/book-slot">
+            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+              Start Your First Booking
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

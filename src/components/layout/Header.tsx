@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export const Header = () => {
@@ -39,10 +40,12 @@ export const Header = () => {
           
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Button variant="premium" size="sm">
-              <Calendar className="mr-2 w-4 h-4" />
-              Book Now
-            </Button>
+            <Link to="/book-slot">
+              <Button variant="premium" size="sm">
+                <Calendar className="mr-2 w-4 h-4" />
+                Book Now
+              </Button>
+            </Link>
           </div>
           
           {/* Mobile Menu Button */}
@@ -69,10 +72,12 @@ export const Header = () => {
                 </a>
               ))}
               <div className="pt-4">
-                <Button variant="premium" size="sm" className="w-full">
-                  <Calendar className="mr-2 w-4 h-4" />
-                  Book Now
-                </Button>
+                <Link to="/book-slot">
+                  <Button variant="premium" size="sm" className="w-full">
+                    <Calendar className="mr-2 w-4 h-4" />
+                    Book Now
+                  </Button>
+                </Link>
               </div>
             </nav>
           </div>

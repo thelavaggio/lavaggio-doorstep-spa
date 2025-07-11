@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-car-wash.jpg";
 
 export const Hero = () => {
@@ -37,10 +38,12 @@ export const Hero = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-              <Calendar className="mr-2" />
-              Book a Slot
-            </Button>
+            <Link to="/book-slot">
+              <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+                <Calendar className="mr-2" />
+                Book a Slot
+              </Button>
+            </Link>
             <Button variant="outline" size="lg" className="text-lg px-8 py-4 bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary">
               <MapPin className="mr-2" />
               Check Locations

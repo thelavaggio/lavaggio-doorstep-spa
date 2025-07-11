@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Calendar, Phone, MapPin } from "lucide-react";
 
 export const CTA = () => {
@@ -21,10 +22,12 @@ export const CTA = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button variant="hero" size="lg" className="text-lg px-10 py-5 bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-              <Calendar className="mr-2" />
-              Book a Slot Now
-            </Button>
+            <Link to="/book-slot">
+              <Button variant="hero" size="lg" className="text-lg px-10 py-5 bg-primary-foreground text-primary hover:bg-primary-foreground/90">
+                <Calendar className="mr-2" />
+                Book a Slot Now
+              </Button>
+            </Link>
             <Button variant="outline" size="lg" className="text-lg px-10 py-5 bg-transparent border-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
               <Phone className="mr-2" />
               Call Us
